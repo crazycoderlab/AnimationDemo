@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="点击查看大图"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/imagebutton1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:src="@mipmap/zoom_image_small_1"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/imagebutton2"
+        android:src="@mipmap/zoom_image_small_2"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toEndOf="@+id/imagebutton1"
+        app:layout_constraintTop_toTopOf="@+id/imagebutton1"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageview"
+        android:visibility="invisible"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
