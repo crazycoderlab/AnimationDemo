@@ -1,4 +1,4 @@
-package com.example.testanimation
+package com.example.testanimation.animation
 
 import android.os.Bundle
 import android.os.Handler
@@ -7,6 +7,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.dynamicanimation.animation.SpringAnimation
 import androidx.dynamicanimation.animation.SpringForce
+import com.example.testanimation.R
 import kotlin.math.abs
 
 

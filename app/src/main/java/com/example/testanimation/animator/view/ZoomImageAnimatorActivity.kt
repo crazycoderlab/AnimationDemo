@@ -1,4 +1,4 @@
-package com.example.testanimation
+package com.example.testanimation.animator.view
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -14,8 +14,9 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
+import com.example.testanimation.R
 
-class ZoomImageAnimationActivity : AppCompatActivity(){
+class ZoomImageAnimatorActivity : AppCompatActivity(){
 
     private lateinit var expandedImageView: ImageView
 
@@ -25,10 +26,14 @@ class ZoomImageAnimationActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zoom_image)
         findViewById<ImageButton>(R.id.imagebutton1).setOnClickListener {
-            zoomImage(it as ImageButton,R.mipmap.zoom_image_big_1)
+            zoomImage(it as ImageButton,
+                R.mipmap.zoom_image_big_1
+            )
         }
         findViewById<ImageButton>(R.id.imagebutton2).setOnClickListener {
-            zoomImage(it as ImageButton,R.mipmap.zoom_image_big_2)
+            zoomImage(it as ImageButton,
+                R.mipmap.zoom_image_big_2
+            )
         }
         expandedImageView = findViewById(R.id.imageview)
         shortAnimationDuration = resources.getInteger(android.R.integer.config_shortAnimTime)

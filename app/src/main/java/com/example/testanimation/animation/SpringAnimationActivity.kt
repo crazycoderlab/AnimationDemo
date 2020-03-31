@@ -1,10 +1,11 @@
-package com.example.testanimation
+package com.example.testanimation.animation
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.dynamicanimation.animation.SpringAnimation
 import androidx.dynamicanimation.animation.SpringForce
+import com.example.testanimation.R
 
 class SpringAnimationActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
