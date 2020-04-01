@@ -15,4 +15,15 @@
         android:layout_marginTop="50dp"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animator_bt2"
+        android:text="点击小图查看大图"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animator_bt1"
+        android:layout_marginTop="50dp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
