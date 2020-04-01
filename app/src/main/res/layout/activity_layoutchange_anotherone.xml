@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutchange_name"
+        android:text="Android"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/layoutchange_icon"
+        android:src="@mipmap/android"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/layoutchange_name"
+        app:layout_constraintEnd_toEndOf="@+id/layoutchange_name"
+        app:layout_constraintTop_toBottomOf="@+id/layoutchange_name"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutchange_dest"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:text="Android，中文常译作安卓或安致，是一个基于Linux内核的开放源代码移动操作系统，由谷歌成立的开放手持设备联盟持续领导与开发，主要设计用于触摸屏移动设备如智能手机和平板电脑与其他便携式设备。"
+        app:layout_constraintStart_toStartOf="@+id/layoutchange_icon"
+        app:layout_constraintEnd_toEndOf="@+id/layoutchange_icon"
+        app:layout_constraintTop_toBottomOf="@+id/layoutchange_icon"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
