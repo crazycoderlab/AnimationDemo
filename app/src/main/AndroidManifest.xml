@@ -53,6 +53,9 @@
         <activity android:name=".transition.viewpager.ViewPagerTransition"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity"/>
+        <activity android:name=".transition.drawable.TransitionDrawableActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
     </application>
 
 </manifest>

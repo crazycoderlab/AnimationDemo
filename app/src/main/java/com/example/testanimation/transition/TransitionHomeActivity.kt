@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testanimation.R
 import com.example.testanimation.transition.activity.ActivityTransitionFirst
+import com.example.testanimation.transition.drawable.TransitionDrawableActivity
 import com.example.testanimation.transition.fragment.FragmentCardTransition
 import com.example.testanimation.transition.viewgroup.LayoutChangeActivity
 import com.example.testanimation.transition.viewgroup.LinearLayoutTransitionActivity
@@ -38,6 +39,11 @@ class TransitionHomeActivity : AppCompatActivity(){
         findViewById<Button>(R.id.transition_bt5).setOnClickListener {
             val intent = Intent(this@TransitionHomeActivity,
                 ViewPagerTransition::class.java)
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.transition_bt6).setOnClickListener {
+            val intent = Intent(this@TransitionHomeActivity,
+                TransitionDrawableActivity::class.java)
             startActivity(intent)
         }
     }

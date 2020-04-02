@@ -61,6 +61,7 @@ class MyAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm){
 
 class VpFragment: Fragment(){
     var index = 0
+    var setBgColor = true
     lateinit var textView: TextView
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -71,6 +72,7 @@ class VpFragment: Fragment(){
         textView = rootView.findViewById(R.id.viewpager_transition_title)
         textView.text = FRAGMENTS_TITLES[index]
         context?.let {
+            if(setBgColor)
             rootView.setBackgroundColor(ContextCompat.getColor(it,FRAGMENTS_COLORS[index]))
         }
         return rootView
